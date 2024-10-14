@@ -1,10 +1,14 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\frontend\PageController;
 use App\Http\Controllers\LanguageController;
+use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\SliderController;
+use App\Http\Controllers\TeamController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\AuthController;
 
@@ -41,5 +45,9 @@ Route::middleware(['auth'])->prefix('admin')->group(function () {
     // Admin specific routes for contact, about, services, etc.
     Route::resource('/contact', ContactController::class);
     Route::resource('/slider', SliderController::class);
-    Route::resource('/services', ServiceController::class);
+    Route::resource('/products', ProductController::class);
+    Route::resource('/categories', CategoryController::class);
+    Route::resource('/portfolios', PortfolioController::class);
+    Route::resource('/teams', TeamController::class);
+    Route::resource('/licences', TeamController::class);
 });

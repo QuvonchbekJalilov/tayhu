@@ -20,32 +20,50 @@
                     </a>
                 </li>
                 <li class="nxl-item">
-                    <a href="{{ route('contact.index') }}" class="nxl-link">
-                        <span class="nxl-micon"><i class="feather-home"></i></span> <!-- Building icon -->
-                        <span class="nxl-mtext">Contact</span>
-                    </a>
-                </li>
-
-                <li class="nxl-item">
                     <a href="{{ route('slider.index') }}" class="nxl-link">
                         <span class="nxl-micon"><i class="feather-users"></i></span> <!-- Employees icon -->
                         <span class="nxl-mtext">Home Slider</span>
                     </a>
                 </li>
-
                 <li class="nxl-item">
-                    <a href="{{ route('services.index') }}" class="nxl-link">
-                        <span class="nxl-micon"><i class="feather-user"></i></span> <!-- Client icon -->
-                        <span class="nxl-mtext">Services</span>
+                    <a href="{{ route('contact.index') }}" class="nxl-link">
+                        <span class="nxl-micon"><i class="feather-home"></i></span> <!-- Building icon -->
+                        <span class="nxl-mtext">Contact</span>
+                    </a>
+                </li>
+                <li class="nxl-item">
+                    <a href="{{ route('categories.index') }}" class="nxl-link">
+                        <span class="nxl-micon"><i class="feather-home"></i></span> <!-- Building icon -->
+                        <span class="nxl-mtext">Category</span>
                     </a>
                 </li>
 
-{{--                <li class="nxl-item">--}}
-{{--                    <a href="{{ route('contracts.index') }}" class="nxl-link">--}}
-{{--                        <span class="nxl-micon"><i class="feather-file-text"></i></span> <!-- Contracts icon -->--}}
-{{--                        <span class="nxl-mtext">Contracts</span>--}}
-{{--                    </a>--}}
-{{--                </li>--}}
+                <li class="nxl-item">
+                    <a href="{{ route('products.index') }}" class="nxl-link">
+                        <span class="nxl-micon"><i class="feather-user"></i></span> <!-- Client icon -->
+                        <span class="nxl-mtext">Products</span>
+                    </a>
+                </li>
+
+                <li class="nxl-item">
+                    <a href="{{ route('teams.index') }}" class="nxl-link">
+                        <span class="nxl-micon"><i class="feather-file-text"></i></span> <!-- Contracts icon -->
+                        <span class="nxl-mtext">Team</span>
+                    </a>
+                </li>
+                <li class="nxl-item">
+                    <a href="{{ route('portfolios.index') }}" class="nxl-link">
+                        <span class="nxl-micon"><i class="feather-file-text"></i></span> <!-- Contracts icon -->
+                        <span class="nxl-mtext">Portfolio</span>
+                    </a>
+                </li>
+                <li class="nxl-item">
+                    <a href="{{ route('licences.index') }}" class="nxl-link">
+                        <span class="nxl-micon"><i class="feather-file-text"></i></span> <!-- Contracts icon -->
+                        <span class="nxl-mtext">Litsenziya</span>
+                    </a>
+                </li>
+
 
             </ul>
         </div>

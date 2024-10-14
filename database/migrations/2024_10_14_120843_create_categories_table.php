@@ -11,14 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('contacts', function (Blueprint $table) {
+        Schema::create('categories', function (Blueprint $table) {
             $table->id();
-            $table->string('address')->nullable();
-            $table->string('phone_number')->nullable();
-            $table->string('telegram')->nullable();
-            $table->string('instagram')->nullable();
-            $table->string('facebook')->nullable();
-            $table->string('youtube')->nullable();
+            $table->string('name_uz')->nullable(); // Uzbek nomi
+            $table->string('name_ru')->nullable(); // Ruscha nomi
+            $table->string('name_en')->nullable(); // Inglizcha nomi
             $table->timestamps();
         });
     }
@@ -28,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('contacts');
+        Schema::dropIfExists('categories');
     }
 };
