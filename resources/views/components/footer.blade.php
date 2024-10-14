@@ -71,26 +71,19 @@
                                     </div>
                                     <ul class="list-area">
                                         <li>
-                                            <a href="about.html">
+                                            <a href="{{ route('about')}}">
                                                 <i class="fa-solid fa-angles-right"></i>
-
                                                 About Us
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="contact.html">
+                                            <a href="{{ route('contact')}}">
                                                 <i class="fa-solid fa-angles-right"></i>
                                                 Contact Us
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="news.html">
-                                                <i class="fa-solid fa-angles-right"></i>
-                                                Blog & News
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="faq.html">
+                                            <a href="{{ route('faq')}}">
                                                 <i class="fa-solid fa-angles-right"></i>
                                                 FAQ’S
                                             </a>
@@ -106,21 +99,21 @@
                                     </div>
                                     <ul class="list-area">
                                         <li>
-                                            <a href="team.html">
+                                            <a href="{{ route('showroom')}}">
                                                 <i class="fa-solid fa-angles-right"></i>
-                                                Our Team
+                                                Showroom
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="project.html">
+                                            <a href="{{ route('gallery')}}">
                                                 <i class="fa-solid fa-angles-right"></i>
-                                                Our Projects
+                                                Our Gallery
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="{{ route('services')}}">
                                                 <i class="fa-solid fa-angles-right"></i>
-                                                Catalogue
+                                                Our Products
                                             </a>
                                         </li>
 

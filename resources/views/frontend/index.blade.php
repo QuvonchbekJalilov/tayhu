@@ -124,9 +124,9 @@
                             </div>
                         </div>
                         <div class="service-content text-center">
-                            <h3><a href="service-details.html">MDF Panels </a></h3>
+                            <h3><a href="{{ route('service-details')}}">MDF Panels </a></h3>
                             <p>Versatile and Durable Solutions for Any Interior Design Need</p>
-                            <a href="service-details.html" class="arrow-icon"><i
+                            <a href="{{ route('service-details')}}" class="arrow-icon"><i
                                     class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -144,9 +144,9 @@
                             </div>
                         </div>
                         <div class="service-content text-center">
-                            <h3><a href="service-details.html">Ceiling Panels </a></h3>
+                            <h3><a href="{{ route('service-details')}}">Ceiling Panels </a></h3>
                             <p>Transform Your Space with Elegant and Functional Ceiling Solutions </p>
-                            <a href="service-details.html" class="arrow-icon"><i
+                            <a href="{{ route('service-details')}}" class="arrow-icon"><i
                                     class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -164,9 +164,9 @@
                             </div>
                         </div>
                         <div class="service-content text-center">
-                            <h3><a href="service-details.html">Wall Panels</a></h3>
+                            <h3><a href="{{ route('service-details')}}">Wall Panels</a></h3>
                             <p>Elevate Your Walls with Stylish and Contemporary Designs.</p>
-                            <a href="service-details.html" class="arrow-icon"><i
+                            <a href="{{ route('service-details')}}" class="arrow-icon"><i
                                     class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -184,9 +184,9 @@
                             </div>
                         </div>
                         <div class="service-content text-center">
-                            <h3><a href="service-details.html">Window Frame</a></h3>
+                            <h3><a href="{{ route('service-details')}}">Window Frame</a></h3>
                             <p>Precision-made frames for modern spaces.</p>
-                            <a href="service-details.html" class="arrow-icon"><i
+                            <a href="{{ route('service-details')}}" class="arrow-icon"><i
                                     class="fa-solid fa-arrow-right"></i></a>
                         </div>
 
@@ -246,7 +246,7 @@
                                 </div>
                             </div>
                             <div class="about-author">
-                                <a href="about.html" class="theme-btn wow fadeInUp" data-wow-delay=".3s">Explore
+                                <a href="{{ route('about')}}" class="theme-btn wow fadeInUp" data-wow-delay=".3s">Explore
                                     more <i class="fa-solid fa-arrow-right"></i></a>
                                 <div class="author-image wow fadeInUp" data-wow-delay=".5s">
                                     <img src="assets/img/about/author.png" alt="author-img">
