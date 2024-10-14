@@ -85,7 +85,12 @@
     <div class="mouse-cursor cursor-outer"></div>
     <div class="mouse-cursor cursor-inner"></div>
     
-    <x-header></x-header>
+    @if (request()->routeIs('home'))
+        <x-header></x-header>
+    @else
+        <x-header-2></x-header-2>
+    @endif
+
 
     <div id="smooth-wrapper">
         <div id="smooth-content">

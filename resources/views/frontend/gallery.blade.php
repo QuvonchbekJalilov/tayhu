@@ -11,19 +11,19 @@
             <div class="breadcrumb-wrapper-items">
                 <div class="page-heading">
                     <div class="breadcrumb-sub-title">
-                        <h1 class="wow fadeInUp" data-wow-delay=".3s">Gallery</h1>
+                        <h1 class="wow fadeInUp" data-wow-delay=".3s">{{__('main.gallery')}}</h1>
                     </div>
                     <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                         <li>
-                            <a href="index.html">
-                                Home
+                            <a href="{{ route('home')}}">
+                                {{__('main.home')}}
                             </a>
                         </li>
                         <li>
                             <i class="fa-sharp fa-solid fa-slash-forward"></i>
                         </li>
                         <li>
-                            Gallery
+                            {{__('main.gallery')}}
                         </li>
                     </ul>
                 </div>
@@ -42,11 +42,11 @@
     <section class="project-section fix section-padding">
         <div class="container">
             <div class="section-title text-center">
-                <h6 class="wow fadeInUp"><i class="fa-solid fa-arrow-left-long"></i>Explore Our Latest
-                    Creations<i class="fa-solid fa-arrow-right-long"></i></h6>
-                <h2 class="splt-txt wow" data-splitting>Our Gallery</h2>
+                <h6 class="wow fadeInUp"><i class="fa-solid fa-arrow-left-long"></i>{{ __('main.explore_latest_creations') }}<i class="fa-solid fa-arrow-right-long"></i></h6>
+                <h2 class="splt-txt wow" data-splitting>{{ __('main.our_gallery') }}</h2>
             </div>
         </div>
+        
         <div class="project-wrapper style-2">
             <div class="main-box">
                 <div class="box wow fadeInUp wow" data-wow-delay=".1s">

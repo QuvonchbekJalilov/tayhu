@@ -38,4 +38,16 @@ class PageController extends Controller
     public function showroom(){
         return view('frontend.showroom');
     }
+
+    public function team(){
+        return view('frontend.team_detail');
+    }
+
+    public function search(Request $request){
+        $search = $request->input('search');
+
+        //$results = YourModel::where('your_column_name', 'LIKE', '%' . $searchTerm . '%')->get(); // Change the column name accordingly
+
+        return view('frontend.search', compact('products'));
+    }
 }

@@ -102,13 +102,15 @@
         <!-- <div class="shape-1">
                 <img src="assets/img/service/shape-1.png" alt="img">
             </div> -->
-        <div class="container">
-            <div class="section-title text-center">
-                <h6 class="wow fadeInUp"><i class="fa-solid fa-arrow-left-long"></i>WHAT WE OFFER<i
-                        class="fa-solid fa-arrow-right-long"></i></h6>
-                <h2 class="splt-txt wow" data-splitting>Our Products That We Provide</h2>
+            <div class="container">
+                <div class="section-title text-center">
+                    <h6 class="wow fadeInUp">
+                        <i class="fa-solid fa-arrow-left-long"></i>{{ __('main.what_we_offer') }}<i class="fa-solid fa-arrow-right-long"></i>
+                    </h6>
+                    <h2 class="splt-txt wow" data-splitting>{{ __('main.our_products') }}</h2>
+                </div>
             </div>
-        </div>
+            
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
@@ -205,40 +207,34 @@
                     <div class="col-xl-6">
                         <div class="about-content">
                             <div class="section-title">
-                                <h6 class="wow fadeInUp"><i class="fa-solid fa-arrow-left-long"></i>About Our
-                                    Company<i class="fa-solid fa-arrow-right-long"></i></h6>
-                                <h2 class="splt-txt wow" data-splitting>Looking into the future</h2>
+                                <h6 class="wow fadeInUp"><i class="fa-solid fa-arrow-left-long"></i>{{ __('main.about_our_company') }}<i class="fa-solid fa-arrow-right-long"></i></h6>
+                                <h2 class="splt-txt wow" data-splitting>{{ __('main.looking_into_the_future') }}</h2>
                             </div>
                             <p class="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".4s">
-                                Our company has been producing high-quality plastic panels for walls and
-                                ceilings for many years. The company has a unique brand and position in the
-                                global market, and today it delights more than a hundred customers with its
-                                products. In recent years, the company has also launched the production of MDF
-                                panels and plans to reach new heights in this field. </p>
+                                {{ __('main.company_description') }}
+                            </p>
                             <div class="row g-4">
                                 <div class="col-lg-7 wow fadeInUp" data-wow-delay=".3s">
                                     <ul class="list">
                                         <li>
                                             <i class="fa-sharp fa-solid fa-check-double"></i>
-                                            100% Satisfaction Work
+                                            {{ __('main.satisfaction_work') }}
                                         </li>
                                         <li>
                                             <i class="fa-sharp fa-solid fa-check-double"></i>
-                                            Professional Team
+                                            {{ __('main.professional_team') }}
                                         </li>
                                         <li>
                                             <i class="fa-sharp fa-solid fa-check-double"></i>
-                                            Flexible & Cost Effective
+                                            {{ __('main.flexible_cost_effective') }}
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="col-lg-5 wow fadeInUp" data-wow-delay=".5s">
                                     <div class="video-image">
-                                        <img src="assets/img/new-images/tayhu-company-images/bg-4 1.png"
-                                            alt="img" style="height: 164px !important; object-fit: cover;">
+                                        <img src="assets/img/new-images/tayhu-company-images/bg-4 1.png" alt="img" style="height: 164px !important; object-fit: cover;">
                                         <div class="video-box">
-                                            <a href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I"
-                                                class="video-btn video-popup">
+                                            <a href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I" class="video-btn video-popup">
                                                 <i class="fas fa-play"></i>
                                             </a>
                                         </div>
@@ -246,17 +242,19 @@
                                 </div>
                             </div>
                             <div class="about-author">
-                                <a href="{{ route('about')}}" class="theme-btn wow fadeInUp" data-wow-delay=".3s">Explore
-                                    more <i class="fa-solid fa-arrow-right"></i></a>
+                                <a href="{{ route('about') }}" class="theme-btn wow fadeInUp" style="font-size: 12px !important;" data-wow-delay=".3s">
+                                    {{ __('main.explore_more') }} <i class="fa-solid fa-arrow-right"></i>
+                                </a>
                                 <div class="author-image wow fadeInUp" data-wow-delay=".5s">
                                     <img src="assets/img/about/author.png" alt="author-img">
                                     <div class="content">
-                                        <p>Tayhu, CEO</p>
-                                        <h4>I.Mamatqulova</h4>
+                                        <p>{{ __('main.ceo') }}</p>
+                                        <h4>{{ __('main.author_name') }}</h4>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
                     <div class="col-xl-6">
                         <div class="about-image wow fadeInUp" data-wow-delay=".3s">
@@ -276,11 +274,13 @@
     <section class="project-section fix section-padding">
         <div class="container">
             <div class="section-title text-center">
-                <h6 class="wow fadeInUp"><i class="fa-solid fa-arrow-left-long"></i>our complete projects<i
-                        class="fa-solid fa-arrow-right-long"></i></h6>
-                <h2 class="splt-txt wow" data-splitting>Our Latest Projects</h2>
+                <h6 class="wow fadeInUp">
+                    <i class="fa-solid fa-arrow-left-long"></i>{{ __('main.complete_projects') }}
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </h6>
+                <h2 class="splt-txt wow" data-splitting>{{ __('main.latest_projects') }}</h2>
             </div>
-        </div>
+        </div>        
         <div class="project-wrapper style-2">
             <div class="main-box">
                 <div class="box wow fadeInUp">
@@ -374,67 +374,67 @@
         <!-- <div class="shape-img">
                 <img src="assets/img/window-frame.png" alt="img" style="padding-left: 30px; padding-bottom: 20px;">
             </div> -->
-        <div class="container">
-            <div class="work-process-wrapper-3">
-                <div class="row g-5">
-                    <div class="col-lg-6">
-                        <div class="work-process-content">
-                            <div class="work-process-box wow fadeInUp" data-wow-delay=".3s">
-                                <div class="shape-img">
-                                    <img src="assets/img/new-images/icon-brown.svg" alt="img">
+            <div class="container">
+                <div class="work-process-wrapper-3">
+                    <div class="row g-5">
+                        <div class="col-lg-6">
+                            <div class="work-process-content">
+                                <div class="work-process-box wow fadeInUp" data-wow-delay=".3s">
+                                    <div class="shape-img">
+                                        <img src="assets/img/new-images/icon-brown.svg" alt="img">
+                                    </div>
+                                    <div class="number">
+                                        01 .
+                                    </div>
+                                    <div class="content">
+                                        <h3>{{ __('main.project_design') }}</h3>
+                                        <p>{{ __('main.project_design_desc') }}</p>
+                                    </div>
                                 </div>
-                                <div class="number">
-                                    01 .
+                                <div class="work-process-box style-2 wow fadeInUp" data-wow-delay=".5s">
+                                    <div class="shape-img">
+                                        <img src="assets/img/new-images/icon-brown.svg" alt="img">
+                                    </div>
+                                    <div class="number">
+                                        02 .
+                                    </div>
+                                    <div class="content">
+                                        <h3>{{ __('main.property_management') }}</h3>
+                                        <p>{{ __('main.property_management_desc') }}</p>
+                                    </div>
                                 </div>
-                                <div class="content">
-                                    <h3>Project Design & Planning</h3>
-                                    <p>We design 3D panels with innovative approaches. Our team creates perfect
-                                        solutions tailored to your needs.</p>
-                                </div>
-                            </div>
-                            <div class="work-process-box style-2 wow fadeInUp" data-wow-delay=".5s">
-                                <div class="shape-img">
-                                    <img src="assets/img/new-images/icon-brown.svg" alt="img">
-                                </div>
-                                <div class="number">
-                                    02 .
-                                </div>
-                                <div class="content">
-                                    <h3>Property Management</h3>
-                                    <p>Through our professional services, we manage your door frames with high
-                                        quality and modern design. Your property is our responsibility!</p>
-                                </div>
-                            </div>
-                            <div class="work-process-box style-3 wow fadeInUp" data-wow-delay=".3s">
-                                <div class="shape-img">
-                                    <img src="assets/img/new-images/icon-brown.svg" alt="img">
-                                </div>
-                                <div class="number">
-                                    03 .
-                                </div>
-                                <div class="content">
-                                    <h3>Final Assemble & Submit</h3>
-                                    <p>Before presenting the final products, we test the quality of each 3D
-                                        panel and door frame. Quality results are our priority!</p>
+                                <div class="work-process-box style-3 wow fadeInUp" data-wow-delay=".3s">
+                                    <div class="shape-img">
+                                        <img src="assets/img/new-images/icon-brown.svg" alt="img">
+                                    </div>
+                                    <div class="number">
+                                        03 .
+                                    </div>
+                                    <div class="content">
+                                        <h3>{{ __('main.final_assemble') }}</h3>
+                                        <p>{{ __('main.final_assemble_desc') }}</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="work-process-image">
-                            <div class="section-title">
-                                <h6 class="wow fadeInUp"><i class="fa-solid fa-arrow-left-long"></i>Working
-                                    Process<i class="fa-solid fa-arrow-right-long"></i></h6>
-                                <h2 class="splt-txt wow" data-splitting>Building The Future's Foundations</h2>
-                            </div>
-                            <div class="track-image mt-4 mt-md-0">
-                                <img src="assets/img/new-images/window-frame (2).png" alt="img">
+                        <div class="col-lg-6">
+                            <div class="work-process-image">
+                                <div class="section-title">
+                                    <h6 class="wow fadeInUp">
+                                        <i class="fa-solid fa-arrow-left-long"></i>{{ __('main.working_process') }}
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </h6>
+                                    <h2 class="splt-txt wow" data-splitting>{{ __('main.building_future') }}</h2>
+                                </div>
+                                <div class="track-image mt-4 mt-md-0">
+                                    <img src="assets/img/new-images/window-frame (2).png" alt="img">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            
     </section>
 
     <!-- Achivements Section Start -->
@@ -448,45 +448,47 @@
                     <div class="col-lg-6">
                         <div class="achivements-content">
                             <div class="section-title">
-                                <h6 class="wow fadeInUp"><i class="fa-solid fa-arrow-left-long"></i>Company
-                                    Status<i class="fa-solid fa-arrow-right-long"></i></h6>
-                                <h2 class="splt-txt wow" data-splitting>Our Services meets The Highest
-                                    Standards.</h2>
+                                <h6 class="wow fadeInUp">
+                                    <i class="fa-solid fa-arrow-left-long"></i>{{ __('main.company_status') }}
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </h6>
+                                <h2 class="splt-txt wow" data-splitting>{{ __('main.service_standards') }}</h2>
                             </div>
                             <p class="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".3s">
-                                Our commitment to excellence ensures that every project we undertake meets the
-                                highest industry standards. We believe that quality service is not just a goal
-                                but a fundamental principle that drives our operations. </p>
+                                {{ __('main.commitment_to_excellence') }}
+                            </p>
                             <div class="counter-items-area">
                                 <div class="counter-content wow fadeInUp" data-wow-delay=".3s">
                                     <h2><span class="count">45</span>k+</h2>
-                                    <span>project Complete</span>
+                                    <span>{{ __('main.projects_complete') }}</span>
                                 </div>
                                 <div class="counter-content wow fadeInUp" data-wow-delay=".5s">
                                     <h2><span class="count">25</span>k+</h2>
-                                    <span>Active On Clients</span>
+                                    <span>{{ __('main.active_clients') }}</span>
                                 </div>
                                 <div class="counter-content wow fadeInUp" data-wow-delay=".7s">
                                     <h2><span class="count">2.4</span>k+</h2>
-                                    <span>Winning Awards</span>
+                                    <span>{{ __('main.winning_awards') }}</span>
                                 </div>
                             </div>
-                            <a href="about.html" class="theme-btn wow fadeInUp" data-wow-delay=".3s">Learn More
-                                <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="{{ route('about')}}" class="theme-btn wow fadeInUp" data-wow-delay=".3s">
+                                {{ __('main.learn_more') }}
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="col-xxl-4 col-xl-5 col-lg-6 wow fadeInUp" data-wow-delay=".2s">
                         <div class="achivements-image">
                             <img src="assets/img/new-images/status-2.jpg" alt="img" style="height: 500px;">
                             <div class="achivements-image-2 float-bob-y">
-                                <img src="assets/img/new-images/status-1.jpg" alt="img"
-                                    style="width: 300px; height: 500px;">
+                                <img src="assets/img/new-images/status-1.jpg" alt="img" style="width: 300px; height: 500px;">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        
     </section>
 
 
