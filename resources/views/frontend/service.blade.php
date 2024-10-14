@@ -11,19 +11,19 @@
             <div class="breadcrumb-wrapper-items">
                 <div class="page-heading">
                     <div class="breadcrumb-sub-title">
-                        <h1 class="wow fadeInUp" data-wow-delay=".3s">Products</h1>
+                        <h1 class="wow fadeInUp" data-wow-delay=".3s">{{__('main.products')}}</h1>
                     </div>
                     <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                         <li>
-                            <a href="index.html">
-                                Home
+                            <a href="{{ route('home')}}">
+                                {{__('main.home') }}
                             </a>
                         </li>
                         <li>
                             <i class="fa-sharp fa-solid fa-slash-forward"></i>
                         </li>
                         <li>
-                            Products
+                            {{ __('main.products') }}
                         </li>
                     </ul>
                 </div>
@@ -41,10 +41,12 @@
     <section class="service-section fix section-padding">
         <div class="container">
             <div class="section-title text-center">
-                <h6 class="wow fadeInUp"><i class="fa-solid fa-arrow-left-long"></i>OUR PRODUCTS<i
-                        class="fa-solid fa-arrow-right-long"></i></h6>
-                <h2 class="splt-txt wow" data-splitting>Quality Frames and Panels <br> For Every Project</h2>
+                <h6 class="wow fadeInUp">
+                    <i class="fa-solid fa-arrow-left-long"></i>{{ __('main.our_products') }}<i class="fa-solid fa-arrow-right-long"></i>
+                </h6>
+                <h2 class="splt-txt wow" data-splitting>{{ __('main.products_description') }}</h2>
             </div>
+            
             <div class="row">
                 <div class="col-lg-8">
                     <div class="row">
@@ -124,39 +126,23 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                            <div class="service-box-items items-bg">
-                                <div class="service-thumb">
-                                    <img src="assets/img/new-images/photo_2024-10-09_09-56-13.jpg" alt="img">
-                                    <div class="icon">
-                                        <img src="assets/img/icon/09.svg" alt="img">
-                                    </div>
-                                </div>
-                                <div class="service-content">
-                                    <h2 class="number">06</h2>
-                                    <h3><a href="service-details.html">Chemical Research</a></h3>
-                                    <p>
-                                        Consectetur Phasellus a odio vel sapien pharetra placerat.
-                                    </p>
-                                    <a href="service-details.html" class="link-btn">See Product <i class="fa-solid fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div> -->
+                       
                     </div>
                 </div>
                 <div class="col-12 col-lg-4">
                     <div class="main-sidebar">
                         <div class="single-sidebar-widget">
                             <div class="search-widget">
-                                <form action="#">
-                                    <input type="text" placeholder="Search">
+                                <form action="{{ route('search') }}" method="GET">
+                                    <input type="text" name="search" placeholder="{{ __('main.search') }}">
                                     <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                                 </form>
                             </div>
                         </div>
+                        
                         <div class="single-sidebar-widget">
                             <div class="wid-title">
-                                <h3>Categories</h3>
+                                <h3>{{__('main.categories')}}</h3>
                             </div>
                             <div class="news-widget-categories">
                                 <ul>
@@ -176,7 +162,7 @@
                         </div>
                         <div class="single-sidebar-widget">
                             <div class="wid-title">
-                                <h3>Download</h3>
+                                <h3>{{__('main.download')}}</h3>
                             </div>
                             <div class="brochures-download-items">
                                 <div class="brochures-items">

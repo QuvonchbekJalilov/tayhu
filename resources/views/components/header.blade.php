@@ -21,13 +21,11 @@
                         </div>
                     </div>
                     <p class="text d-none d-xl-block">
-                        Tayhu – By combining quality and elegance, we strive to enhance the beauty and comfort of every
-                        home. Through our innovative designs and high-quality materials, we ensure that your home
-                        becomes not only more beautiful but also more modern and comfortable.
+                        {{__('main.header_content')}}
                     </p>
                     <div class="mobile-menu fix mb-3"></div>
                     <div class="offcanvas__contact">
-                        <h4>Contact Info</h4>
+                        <h4>{{__('main.contact_info')}}</h4>
                         <ul>
                             <li class="d-flex align-items-center">
                                 <div class="offcanvas__contact-icon">
@@ -104,19 +102,16 @@
                                     <ul>
                                         <li class="has-dropdown active menu-thumb">
                                             <a href="{{ route('home')}}">
-                                                Home
-
+                                                {{__('main.home')}}
                                             </a>
-
                                         </li>
-
                                         <li>
-                                            <a href="{{ route('about')}}">About Us</a>
+                                            <a href="{{ route('about')}}">{{__('main.about')}}</a>
                                         </li>
                                         
                                         <li>
                                             <a href="{{ route('services')}}">
-                                                Products
+                                                {{__('main.products')}}
                                                 <i class="fa-solid fa-plus"></i>
                                             </a>
                                             <ul class="submenu">
@@ -129,40 +124,35 @@
                                         </li>
                                         <li>
                                             <a href="{{ route('gallery')}}">
-                                                Gallery
-
+                                                {{__('main.gallery')}}
                                             </a>
-
                                         </li>
                                         <li>
                                             <a href="{{ route('showroom')}}">
-                                                Showroom
+                                                {{__('main.showroom')}}
                                             </a>
 
                                         </li>
                                         <li>
-                                            <a href="{{ route('contact')}}">Contact Us</a>
+                                            <a href="{{ route('contact')}}">{{__('main.contact')}}</a>
                                         </li>
                                         <li>
-                                            <form action="#" method="POST"
-                                                class="language-form d-flex">
+                                            <form action="{{ route('switch.language') }}" method="POST" class="language-form d-flex">
                                                 @csrf
                                                 <div class="dropdown">
                                                     <button type="button" class="dropdown-btn">
-                                                        {{ strtoupper(app()->getLocale()) }} <i
-                                                            class="fa fa-angle-down"></i>
+                                                        {{ strtoupper(app()->getLocale()) }} <i class="fa fa-angle-down"></i>
                                                     </button>
-                                                    <div class="dropdown-content">
-                                                        <div data-value="uz">Uz</div>
-                                                        <div data-value="ru">Ru</div>
-                                                        <div data-value="en">En</div>
+                                                    <div class="dropdown-content" style="display: none;">
+                                                        <div data-value="uz">UZ</div>
+                                                        <div data-value="ru">RU</div>
+                                                        <div data-value="en">EN</div>
                                                     </div>
-                                                    <input type="hidden" name="lang" id="selected-language"
-                                                        value="{{ app()->getLocale() }}">
+                                                    <input type="hidden" name="lang" id="selected-language" value="{{ app()->getLocale() }}">
                                                 </div>
                                             </form>
                                         </li>
-
+                                        
                                         <!-- Language Dropdown Script -->
                                         <script>
                                             const dropdownBtn = document.querySelector('.dropdown-btn');
@@ -170,12 +160,12 @@
                                             const dropdownItems = document.querySelectorAll('.dropdown-content div');
                                             const selectedLanguage = document.getElementById('selected-language');
                                             const languageForm = document.querySelector('.language-form');
-
+                                        
                                             // Toggle dropdown visibility
                                             dropdownBtn.addEventListener('click', () => {
                                                 dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
                                             });
-
+                                        
                                             // Change language on selection and submit form
                                             dropdownItems.forEach(item => {
                                                 item.addEventListener('click', () => {
@@ -185,7 +175,7 @@
                                                     languageForm.submit(); // Submit the form
                                                 });
                                             });
-
+                                        
                                             // Close dropdown when clicking outside
                                             window.addEventListener('click', (event) => {
                                                 if (!event.target.closest('.dropdown')) {
@@ -193,6 +183,7 @@
                                                 }
                                             });
                                         </script>
+                                        
 
                                         <!-- Language Dropdown Styles -->
                                         <style>

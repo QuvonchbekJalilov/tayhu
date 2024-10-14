@@ -1,0 +1,103 @@
+<?php
+
+return [
+    'home' => "Bosh sahifa",
+    'about' => "Biz haqimizda",
+    'products' => "Mahsulotlar",
+    'gallery' => "Galereya",
+    'showroom' => "Showroom",
+    'contact' => "Aloqa",
+    'header_content2' => "Tayhu – Biz sifat va nafislikni birlashtirib, har bir uyning go'zalligini va qulayligini oshirishga intilamiz. Innovatsion dizaynlarimiz va yuqori sifatli materiallarimiz orqali sizning uyingiz nafaqat go'zal, balki zamonaviy va qulay bo'lishini ta'minlaymiz.",
+    'header_content' => "Tayhu – Biz sifat va nafislikni birlashtirib, har bir uyning go'zalligini va qulayligini oshirishga intilamiz. Innovatsion dizaynlarimiz va yuqori sifatli materiallarimiz orqali sizning uyingiz nafaqat go'zal, balki zamonaviy va qulay bo'lishini ta'minlaymiz.",
+    'contact_info' => "Aloqa ma'lumotlari",
+
+    'about_our_company' => 'Bizning Kompaniyamiz Haqida',
+    'looking_into_the_future' => 'Kelajakni ko‘zlamoqda',
+    'company_description' => 'Kompaniyamiz ko‘p yillardan buyon devor va shiftlar uchun yuqori sifatli plastik panellar ishlab chiqaradi. Kompaniya dunyo bozorida o‘ziga xos brend va pozitsiyaga ega bo‘lib, bugungi kunda mahsulotlari bilan yuzlab mijozlarni quvontirmoqda. So‘nggi yillarda kompaniya MDF panellari ishlab chiqarishni ham yo‘lga qo‘ydi va bu sohada yangi cho‘qqilarga chiqishni rejalashtirmoqda.',
+    'satisfaction_work' => '100% Mijozlarning qoniqishi',
+    'professional_team' => 'Professional Jamoa',
+    'flexible_cost_effective' => 'Moslashuvchan va Tejamkor',
+    'explore_more' => 'Ko‘proq bilib oling',
+    'ceo' => 'Tayhu, Bosh Direktor',
+    'author_name' => 'I.Mamatqulova',
+    'complete_projects' => 'Bizning to‘liq loyihalarimiz',
+    'latest_projects' => 'Bizning so‘nggi loyihalarimiz',
+    'project_design' => 'Loyiha Dizayni va Rejalashtirish',
+    'project_design_desc' => 'Biz innovatsion yondashuv bilan 3D panellarni loyihalashtiramiz. Jamoamiz ehtiyojlaringizga mos yechimlar yaratadi.',
+
+    'property_management' => 'Mulkni boshqarish',
+    'property_management_desc' => 'Bizning professional xizmatlarimiz orqali, eshik romlarini yuqori sifatli va zamonaviy dizayn bilan boshqaramiz. Mulkingiz bizning masʼuliyatimiz!',
+
+    'final_assemble' => 'Yakuniy yig‘ish va topshirish',
+    'final_assemble_desc' => 'Mahsulotni taqdim qilishdan oldin, har bir 3D panel va eshik romining sifatini sinovdan o‘tkazamiz. Biz uchun sifat ustuvor ahamiyatga ega!',
+
+    'working_process' => 'Ish jarayoni',
+    'building_future' => 'Kelajakning poydevorini yaratish',
+    'company_status' => 'Kompaniya Holati',
+    'service_standards' => 'Xizmatlarimiz eng yuqori standartlarga mos keladi.',
+    'commitment_to_excellence' => 'Bizning mukammallikka sadoqatimiz har bir loyihaning eng yuqori sanoat standartlariga javob berishini taʼminlaydi. Biz sifatli xizmatni nafaqat maqsad, balki asosiy tamoyil deb bilamiz.',
+
+    'projects_complete' => 'Bajarilgan Loyihalar',
+    'active_clients' => 'Faol Mijozlar',
+    'winning_awards' => 'Yutgan Mukofotlar',
+
+    'learn_more' => 'Batafsil maʼlumot',
+    'office_location' => 'Ofis Manzili',
+    'send_mail' => "Email Yuborish",
+    'call_emergancy' => "Favqulodda Qo'ng'iroq",
+    'footer_content' => "Tayhu – Sifat va nafislikni birlashtirib, har bir uyni go'zal va qulay qilishga intilamiz. Innovatsion dizaynlar va yuqori sifatli materiallar orqali uyingizni nafaqat go'zal, balki zamonaviy va qulay qilishni ta'minlaymiz.",
+    'quick_link' => "Tezkor Linklar",
+    'our_services' => "Bizning Xizmatlarimiz",
+    'footer_privacy' => "2024 © <a href='https://dora.uz/'>DORA System</a> Barcha huquqlar himoyalangan",
+
+    'what_we_offer' => 'TAQDIM ETADIGANIMIZ',
+    'our_products' => 'Taqdim Etiladigan Mahsulotlarimiz',
+    'make_your_selection' => 'Tanlovingizni Qiling',
+    'effortlessly_configure' => 'Orzularingizdagi Dekorni Osonlik Bilan Sozlang va Ko\'ring<br>',
+    'make_your_selection' => 'Tanlovingizni Qiling',
+    'create_your_dream_ceiling' => 'Orzularingizdagi Shiftni Yaratish',
+
+    'explore_latest_creations' => 'Bizning So‘nggi Yaratuvchilarimizni O‘rganing',
+    'our_gallery' => 'Bizning Galereyamiz',
+
+    'contact_us' => 'BIZ BILAN BOG‘LANING',
+    'our_contact_information' => 'Bizning Aloqa Ma\'lumotlarimiz',
+    'our_address' => 'Bizning Manzilimiz',
+    'address_details' => 'Karvan Yuli Ko‘chasi, Toshkent',
+    'email_address' => 'Elektron Pochta Manzili',
+    'email_details' => 'Email: <a href="mailto:spektrstar@tayhu.uz">spektrstar@tayhu.uz</a>',
+    'hours_of_operation' => 'Ish Vaqti',
+    'hours_details' => 'Dushanbadan Shanbagacha 9:00 - 18:00',
+
+    'get_in_touch' => 'BIZ BILAN BOG‘LANING',
+    'first_name' => 'Ism',
+    'phone_number' => 'Telefon Raqami',
+    'whats_on_your_mind' => 'Izoh Qoldirish',
+    'send_message_now' => 'HOZIR XABARNI JO\'NATISH',
+    'create_space_title' => 'Siz orzu qilgan joyni yarating',
+    'create_space_description' => 'Bizning yuqori sifatli 3D panellarimiz va mustahkam eshik/deraza ramkalari bilan sizning tasavvuringizni haqiqatga aylantiramiz. Har bir loyiha uchun innovatsiyalar, nafislik va davomiy sifatni his qiling.',
+    'list_item_1' => 'Zamonaviy ichki va tashqi makonlar uchun innovatsion dizaynlar',
+    'list_item_2' => 'Eshik va derazalaringiz uchun maxsus yechimlar',
+    'list_item_3' => 'Mustahkamlik va uslubni ta’minlovchi yuqori samarali materiallar',
+
+    'achievements' => 'Yutuqlar',
+    'achievements_title' => 'Sanoat Kuch, <br> Butun Dunyo Ta’siri',
+    'make_appointment' => 'Murojaat Qiling',
+    'projects_completed' => 'Bajarilgan loyihalar',
+    'active_clients' => 'Mijozlar faol',
+    'experienced_team' => 'Tajribali jamoa',
+    'winning_awards' => 'Yutgan mukofotlar',
+    
+    'our_certificate' => 'Bizning Sertifikatimiz',
+    'our_certificate_title' => 'Bizning Sertifikatimiz',
+    'our_team_members' => 'Bizning Jamoa A’zolarimiz',
+    'our_team_title' => 'Bizning Professional Jamoamiz',
+    'our_products' => 'Bizning Mahsulotlarimiz',
+    'products_description' => 'Har Bir Loyihaga Sifatli Ramkalar va Panellar',
+    'search' => "Qidirish",
+    'categories' => 'Kategoriyalar',
+    'download' => "Yuklab olish",
+
+
+
+];

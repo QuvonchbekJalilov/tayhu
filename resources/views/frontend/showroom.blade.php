@@ -12,19 +12,19 @@
             <div class="breadcrumb-wrapper-items">
                 <div class="page-heading">
                     <div class="breadcrumb-sub-title">
-                        <h1 class="wow fadeInUp" data-wow-delay=".3s">Showroom</h1>
+                        <h1 class="wow fadeInUp" data-wow-delay=".3s">{{__('main.showroom')}}</h1>
                     </div>
                     <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                         <li>
-                            <a href="index.html">
-                                Home
+                            <a href="{{ route('home')}}">
+                                {{ __('main.home')}}
                             </a>
                         </li>
                         <li>
                             <i class="fa-sharp fa-solid fa-slash-forward"></i>
                         </li>
                         <li>
-                            Showroom
+                            {{__('main.showroom')}}
                         </li>
                     </ul>
                 </div>
@@ -44,10 +44,11 @@
     <section class="project-section section-padding fix">
         <div class="container">
             <div class="section-title text-center">
-                <h6 class="wow fadeInUp"><i class="fa-solid fa-arrow-left-long"></i>Make Your Selection<i
+                <h6 class="wow fadeInUp"><i class="fa-solid fa-arrow-left-long"></i>{{ __('main.make_your_selection') }}<i
                         class="fa-solid fa-arrow-right-long"></i></h6>
-                <h2 class="splt-txt wow" data-splitting>Effortlessly Configure and Preview <br> Your Dream Decor</h2>
+                <h2 class="splt-txt wow" data-splitting>{!! __('main.effortlessly_configure') !!}</h2>
             </div>
+            
             <div class="row">
                 <div class="col-lg-9">
                     <div class="showrooom-container shadow-lg bg-body-tertiary rounded"
@@ -82,10 +83,11 @@
                 </div>
             </div>
             <div class="section-title text-center mt-5">
-                <h6 class="wow fadeInUp"><i class="fa-solid fa-arrow-left-long"></i>Make Your Selection<i
+                <h6 class="wow fadeInUp"><i class="fa-solid fa-arrow-left-long"></i>{{ __('main.make_your_selection') }}<i
                         class="fa-solid fa-arrow-right-long"></i></h6>
-                <h2 class="splt-txt wow" data-splitting>Create Your Dream Ceiling</h2>
+                <h2 class="splt-txt wow" data-splitting>{{ __('main.create_your_dream_ceiling') }}</h2>
             </div>
+            
             <div class="row mt-5">
                 <div class="col-lg-3 showroom-cards-responsive">
                     <div class="col-lg-12">
