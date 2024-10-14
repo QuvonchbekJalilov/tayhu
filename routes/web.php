@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\frontend\PageController;
+use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\SliderController;
 use Illuminate\Support\Facades\Route;
@@ -30,6 +31,8 @@ Route::get('/about', [PageController::class, 'about'])->name('about');
 Route::get('/services', [PageController::class, 'services'])->name('services');
 Route::get('/service-details', [PageController::class,'serviceDetails'])->name('service-details');
 
+
+Route::post('/switch-language', [LanguageController::class, 'switchLanguage'])->name('switch.language');
 // Admin Routes with Prefix
 Route::middleware(['auth'])->prefix('admin')->group(function () {
     Route::get('/dashboard', [AuthController::class, 'adminDashboard'])->name('dashboard');

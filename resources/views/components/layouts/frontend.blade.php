@@ -94,6 +94,8 @@
         </div>
     </div>
 
+    <script src="assets/js/configurator.js"></script>
+
     <!--<< All JS Plugins >>-->
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <!--<< Viewport Js >>-->

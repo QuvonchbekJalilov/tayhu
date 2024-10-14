@@ -103,7 +103,7 @@
                                 <nav id="mobile-menu">
                                     <ul>
                                         <li class="has-dropdown active menu-thumb">
-                                            <a href="index.html">
+                                            <a href="{{ route('home')}}">
                                                 Home
 
                                             </a>
@@ -113,27 +113,7 @@
                                         <li>
                                             <a href="{{ route('about')}}">About Us</a>
                                         </li>
-                                        <!-- <li class="has-dropdown">
-                                                <a href="news.html">
-                                                    Pages
-                                                    
-                                                </a>
-                                                <ul class="submenu">
-                                                    <li class="has-dropdown">
-                                                        <a href="team-details.html">
-                                                            Our Team
-                                                            <i class="fas fa-angle-down"></i>
-                                                        </a>
-                                                        <ul class="submenu">
-                                                            <li><a href="team.html">Our Team</a></li>
-                                                            <li><a href="team-details.html">Team Details</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="pricing.html">Pricing</a></li>
-                                                    <li><a href="faq.html">Faq's</a></li>
-                                                    <li><a href="404.html">404 Page</a></li>
-                                                </ul>
-                                            </li> -->
+                                        
                                         <li>
                                             <a href="{{ route('services')}}">
                                                 Products
@@ -148,14 +128,14 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="project.html">
+                                            <a href="{{ route('gallery')}}">
                                                 Gallery
 
                                             </a>
 
                                         </li>
                                         <li>
-                                            <a href="showroom.html">
+                                            <a href="{{ route('showroom')}}">
                                                 Showroom
                                             </a>
 
@@ -271,10 +251,7 @@
                             </div>
                         </div>
                         <a href="#0" class="search-trigger search-icon"><i class="fas fa-search"></i></a>
-                        <div class="header-button">
-                            <a href="contact.html" class="theme-btn">GAT A QUOTE <i
-                                    class="fa-solid fa-arrow-right"></i></a>
-                        </div>
+                        
                         <div class="header__hamburger d-xl-block my-auto">
                             <div class="sidebar__toggle">
                                 <i class="fas fa-bars"></i>

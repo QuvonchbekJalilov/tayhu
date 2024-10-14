@@ -26,4 +26,16 @@ class PageController extends Controller
     public function serviceDetails(){
         return view('frontend.service_detail');
     }
+
+    public function faq(){
+        return view('frontend.faq');
+    }
+
+    public function gallery(){
+        return view('frontend.gallery');
+    }
+
+    public function showroom(){
+        return view('frontend.showroom');
+    }
 }
