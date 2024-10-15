@@ -28,9 +28,9 @@ return new class extends Migration
             $table->string('facebook')->nullable();
             $table->string('experience')->nullable();
             $table->string('availability')->nullable();
-            $table->integer('architecture')->default(false);
-            $table->integer('construction')->default(false);
-            $table->integer('interior_design')->default(false);
+            $table->integer('architecture')->nullable();
+            $table->integer('construction')->nullable();
+            $table->integer('interior_design')->nullable();
             $table->timestamps();
         });
     }
