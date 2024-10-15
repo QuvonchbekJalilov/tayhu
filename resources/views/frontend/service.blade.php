@@ -179,13 +179,11 @@ $lang = app()->getLocale();
                             <div class="news-widget-categories">
                                 <ul>
                                     @foreach($categories as $category)
-                                        @foreach($category->products as $product)
-                                            <li>
-                                                <a href="{{ route('product-details', $product->id)}}">
-                                                    {{ $category['name_' . $lang] }}
-                                                </a>
-                                            </li>
-                                        @endforeach
+                                        <li>
+                                            <a href="{{ route('product-details', $category->id)}}">
+                                                {{ $category['name_' . $lang] }}
+                                            </a>
+                                        </li>
                                     @endforeach
                                 </ul>
                             </div>
