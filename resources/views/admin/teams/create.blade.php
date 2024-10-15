@@ -51,10 +51,14 @@
                                     </ul>
 
                                     <div class="tab-content p-4">
+                                        <div class="form-group pb-3">
+                                            <label for="name">Team Name :</label>
+                                            <input type="text" class="form-control" id="name" name="name" value="{{ old('name') }}" required>
+                                        </div>
                                         <div class="tab-pane fade show active" id="uzConTab" role="tabpanel">
                                             <div class="form-group pb-3">
-                                                <label for="name_uz">Team Name (UZ):</label>
-                                                <input type="text" class="form-control" id="name_uz" name="name_uz" value="{{ old('name_uz') }}" required>
+                                                <label for="position_uz">Team Position (UZ) :</label>
+                                                <input type="text" class="form-control" id="position_uz" name="position_uz" value="{{ old('position_uz') }}" required>
                                             </div>
                                             <div class="form-group pb-3">
                                                 <label for="description_uz">Description (UZ):</label>
@@ -69,8 +73,8 @@
                                         </div>
                                         <div class="tab-pane fade" id="enConTab" role="tabpanel">
                                             <div class="form-group pb-3">
-                                                <label for="name_en">Team Name (EN):</label>
-                                                <input type="text" class="form-control" id="name_en" name="name_en" value="{{ old('name_en') }}" required>
+                                                <label for="position_en">Team Position (EN) :</label>
+                                                <input type="text" class="form-control" id="position_en" name="position_en" value="{{ old('position_en') }}" required>
                                             </div>
                                             <div class="form-group pb-3">
                                                 <label for="description_en">Description (EN):</label>
@@ -85,8 +89,8 @@
                                         </div>
                                         <div class="tab-pane fade" id="ruConTab" role="tabpanel">
                                             <div class="form-group pb-3">
-                                                <label for="name_ru">Team Name (RU):</label>
-                                                <input type="text" class="form-control" id="name_ru" name="name_ru" value="{{ old('name_ru') }}" required>
+                                                <label for="position_ru">Team Position (RU) :</label>
+                                                <input type="text" class="form-control" id="position_ru" name="position_ru" value="{{ old('position_ru') }}" required>
                                             </div>
                                             <div class="form-group pb-3">
                                                 <label for="description_ru">Description (RU):</label>
@@ -124,25 +128,23 @@
                                     </div>
                                     <div class="form-group p-3">
                                         <label for="experience">Experience:</label>
-                                        <textarea class="form-control" id="experience" name="experience">{{ old('experience') }}</textarea>
+                                        <input class="form-control" id="experience" name="experience" value="{{ old('experience') }}"/>
                                     </div>
                                     <div class="form-group p-3">
                                         <label for="availability">Availability:</label>
-                                        <textarea class="form-control" id="availability" name="availability">{{ old('availability') }}</textarea>
+                                        <input class="form-control" id="availability" name="availability" value="{{ old('availability') }}"/>
                                     </div>
                                     <div class="form-group p-3">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="architecture" id="architecture" value="1">
-                                            <label class="form-check-label" for="architecture">Architecture</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="construction" id="construction" value="1">
-                                            <label class="form-check-label" for="construction">Construction</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="interior_design" id="interior_design" value="1">
-                                            <label class="form-check-label" for="interior_design">Interior Design</label>
-                                        </div>
+                                        <label class="form-label" for="architecture">Architecture ( )%</label>
+                                        <input class="form-control" type="text" name="architecture" id="architecture" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+                                    </div>
+                                    <div class="form-group p-3">
+                                        <label class="form-label" for="construction">Construction ( )%</label>
+                                        <input class="form-control" type="text" name="construction" id="construction" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+                                    </div>
+                                    <div class="form-group p-3">
+                                        <label class="form-label" for="interior_design">Interior Design ( )%</label>
+                                        <input class="form-control" type="text" name="interior_design" id="interior_design" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
                                     </div>
                                 </div>
                             </div>

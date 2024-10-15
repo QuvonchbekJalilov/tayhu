@@ -12,6 +12,7 @@ class ContactsTableSeeder extends Seeder
         DB::table('contacts')->insert([
             [
                 'address' => '123 Main St, Tashkent',
+                'email' => 'spektrstar@tayhu.uz',
                 'phone_number' => '+998901234567',
                 'telegram' => '@example_telegram',
                 'instagram' => '@example_instagram',

@@ -47,29 +47,29 @@
                 <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                     <div class="contact-box-items">
                         <div class="icon">
-                            <img src="assets/img/icon/18.svg" alt="img">
+                            <img src="/assets/img/icon/18.svg" alt="img">
                         </div>
                         <div class="content">
                             <h3>{{ __('main.our_address') }}</h3>
-                            <p>{{ __('main.address_details') }}</p>
+                            <p>{{ $contact->address }}</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
                     <div class="contact-box-items">
                         <div class="icon">
-                            <img src="assets/img/icon/19.svg" alt="img">
+                            <img src="/assets/img/icon/19.svg" alt="img">
                         </div>
                         <div class="content">
                             <h3>{{ __('main.email_address') }}</h3>
-                            <p>{!! __('main.email_details') !!}</p>
+                            <p>{{ $contact->email }}</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".6s">
                     <div class="contact-box-items">
                         <div class="icon">
-                            <img src="assets/img/icon/20.svg" alt="img">
+                            <img src="/assets/img/icon/20.svg" alt="img">
                         </div>
                         <div class="content">
                             <h3>{{ __('main.hours_of_operation') }}</h3>
@@ -244,7 +244,7 @@
 
 
 
-    
+
     <!-- Contact Info Section Start -->
     <div class="office-google-map-wrapper pb-5">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2932.871999569018!2d69.28059018876664!3d41.389075980124055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDIzJzIwLjciTiA2OcKwMTYnNTcuOCJF!5e0!3m2!1sen!2s!4v1603904838884!5m2!1sen!2s"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>

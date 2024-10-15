@@ -7,20 +7,20 @@
             <div class="page-header">
                 <div class="page-header-left d-flex align-items-center">
                     <div class="page-header-title">
-                        <h5 class="m-b-10">Jamoalar</h5>
+                        <h5 class="m-b-10">Licence</h5>
                     </div>
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item">
                             <a href="{{ route('dashboard') }}" class="nxl-link">Home</a>
                         </li>
-                        <li class="breadcrumb-item">Jamoalar</li>
+                        <li class="breadcrumb-item">Licence</li>
                     </ul>
                 </div>
                 <div class="page-header-right ms-auto">
                     <div class="page-header-right-items">
-                        <a href="{{ route('teams.create') }}" class="btn btn-primary">
+                        <a href="{{ route('licences.create') }}" class="btn btn-primary">
                             <i class="feather-plus me-2"></i>
-                            <span>Yangi Team Qo'shish</span>
+                            <span>Yangi Licence qo'shish</span>
                         </a>
                     </div>
                 </div>
@@ -36,24 +36,24 @@
                                 <table class="table">
                                     <thead>
                                     <tr>
-                                        <th>Jamoa Nomi</th>
-                                        <th>Availability</th>
-                                        <th>Experience</th>
+                                        <th>licence nomi (UZ)</th>
+                                        <th>licence nomi (RU)</th>
+                                        <th>licence nomi (EN)</th>
                                         <th>Actions</th>
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    @foreach($teams as $team)
+                                    @foreach($licences as $item)
                                         <tr>
-                                            <td>{{ $team->name }}</td>
-                                            <td>{{ $team->availability }}</td>
-                                            <td>{{ $team->experience }}</td>
+                                            <td>{{ $item->name_uz }}</td>
+                                            <td>{{ $item->name_ru }}</td>
+                                            <td>{{ $item->name_en }}</td>
                                             <td>
                                                 <div class="hstack gap-2 justify-content-end">
-                                                    <a href="{{ route('teams.edit', $team->id) }}" class="avatar-text avatar-md">
+                                                    <a href="{{ route('licences.edit', $item->id) }}" class="avatar-text avatar-md">
                                                         <i class="feather-edit-3"></i>
                                                     </a>
-                                                    <form action="{{ route('teams.destroy', $team->id) }}" method="POST" onsubmit="return confirm('Ushbu jamoani o‘chirishni xohlaysizmi?')">
+                                                    <form action="{{ route('licences.destroy', $item->id) }}" method="POST" onsubmit="return confirm('Ushbu mahsulotni o‘chirishni xohlaysizmi?')">
                                                         @csrf
                                                         @method('DELETE')
                                                         <button type="submit" style="background: none; border: none;" class="avatar-text avatar-md">
@@ -74,4 +74,5 @@
             <!-- [ Main Content ] end -->
         </div>
     </main>
+
 @endsection

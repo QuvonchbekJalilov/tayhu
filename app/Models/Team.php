@@ -22,5 +22,18 @@ class Team extends Model
         'architecture',
         'construction',
         'interior_design',
+        'instagram',
+        'facebook',
+        'telegram',
+        'availability',
+        'position_uz',
+        'position_ru',
+        'position_en',
+        'experience',
     ];
+
+    public function portfolios()
+    {
+        return $this->hasMany(Portfolio::class);
+    }
 }

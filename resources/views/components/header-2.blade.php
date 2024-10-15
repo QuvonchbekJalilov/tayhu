@@ -1,7 +1,11 @@
+<?php
+$contact = \App\Models\Contact::first();
+?>
+
 <!-- Preloader Start -->
 <div id="preloader" class="preloader">
     <div class="animation-preloader">
-        <div class="spinner">                
+        <div class="spinner">
         </div>
         <div class="txt-loading">
             <span data-text-preloader="T" class="letters-loading">
@@ -40,7 +44,7 @@
     </div>
 </div>
 
-<!--<< Mouse Cursor Start >>-->  
+<!--<< Mouse Cursor Start >>-->
 <div class="mouse-cursor cursor-outer"></div>
 <div class="mouse-cursor cursor-inner"></div>
 
@@ -56,8 +60,8 @@
         <div class="offcanvas__content">
             <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                 <div class="offcanvas__logo">
-                    <a href="index.html">
-                        <img src="assets/img/tayhu-logo-white-2.png" alt="logo-img">
+                    <a href="/">
+                        <img src="/assets/img/tayhu-logo-white-2.png" alt="logo-img">
                     </a>
                 </div>
                 <div class="offcanvas__close">
@@ -78,7 +82,7 @@
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div class="offcanvas__contact-text">
-                            <a target="_blank" href="#">Karvan Yuli Street, Tashkent</a>
+                            <a target="_blank" href="javascript:void(0);">{{ $contact->address }}</a>
                         </div>
                     </li>
                     <li class="d-flex align-items-center">
@@ -86,7 +90,7 @@
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div class="offcanvas__contact-text">
-                            <a href="mailto:spektrstar@tayhu.uz"><span class="mailto:info@example.com">spektrstar@tayhu.uz</span></a>
+                            <a href="mailto:spektrstar@tayhu.uz"><span class="mailto:{{ $contact->email ?? 'spektrstar@tayhu.uz'}}">{{ $contact->email ?? 'spektrstar@tayhu.uz'}}</span></a>
                         </div>
                     </li>
                     <li class="d-flex align-items-center">
@@ -94,7 +98,7 @@
                             <i class="fas fa-clock"></i>
                         </div>
                         <div class="offcanvas__contact-text">
-                            <a target="_blank" href="#">Mod-Sat, 9am - 6pm</a>
+                            <a target="_blank" href="javascript:void(0);"><p>{{ __('main.hours_details') }}</p></a>
                         </div>
                     </li>
                     <li class="d-flex align-items-center">
@@ -102,7 +106,7 @@
                             <i class="fas fa-phone"></i>
                         </div>
                         <div class="offcanvas__contact-text">
-                            <a href="tel:+998 71 223 65 08">+998 71 223 65 08</a>
+                            <a href="tel:{{ $contact->phone_number ?? '+998945135324'}}">{{ $contact->phone_number ?? '+998945135324'}}</a>
                         </div>
                     </li>
                 </ul>
@@ -112,10 +116,10 @@
                     </a>
                 </div>
                 <div class="social-icon d-flex align-items-center">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="{{  $contact->facebook ?? 'facebook' }}"><i class="fab fa-facebook-f"></i></a>
+                    <a href="{{  $contact->instagram ?? 'instagram' }}"><i class="fab fa-instagram"></i></a>
+                    <a href="{{  $contact->youtube ?? 'youtube' }}"><i class="fab fa-youtube"></i></a>
+                    <a href="{{  $contact->telegram ?? 'telegram' }}"><i class="fab fa-telegram"></i></a>
                 </div>
             </div>
         </div>
@@ -131,24 +135,24 @@
             <ul class="contact-list">
                 <li>
                     <i class="fas fa-envelope"></i>
-                    <a href="mailto:spektrstar@tayhu.uz">spektrstar@tayhu.uz</a>
+                    <a href="mailto:{{ $contact->email ?? 'spektrstar@tayhu.uz'}}">{{ $contact->email ?? 'spektrstar@tayhu.uz'}}</a>
                 </li>
                 <li>
                     <i class="fa-sharp fa-solid fa-location-dot"></i>
-                    Karvan Yuli Street, Tashkent
+                    {{ $contact->address ?? "Karvan Yuli Street, Tashkent"}}
                 </li>
                 <li>
                     <i class="fa-solid fa-phone"></i>
-                    <a href="tel:+998 71 223 65 08">+998 71 223 65 08</a>
+                    <a href="tel:{{ $contact->phone_number ?? '+998 71 223 65 08'}}">{{ $contact->email ?? '+998 71 223 65 08'}}</a>
                 </li>
             </ul>
             <div class="top-right">
-               
+
                 <div class="social-icon d-flex align-items-center">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="{{ $contact->address ?? "facebook"}}"><i class="fab fa-facebook-f"></i></a>
+                    <a href="j{{ $contact->address ?? "instagram"}}"><i class="fab fa-instagram"></i></a>
+                    <a href="{{ $contact->address ?? "youtube"}}javascript:void(0);"><i class="fab fa-youtube"></i></a>
+                    <a href="{{ $contact->address ?? "telegram"}}"><i class="fab fa-telegram"></i></a>
                 </div>
             </div>
         </div>
@@ -157,8 +161,8 @@
                 <div class="header-main">
                     <div class="header-left">
                         <div class="logo">
-                            <a href="index.html" class="header-logo">
-                                <img src="assets/img/tayhu-logo-white-2.png" alt="logo-img" style="width:200px; height:70px;">
+                            <a href="/" class="header-logo">
+                                <img src="/assets/img/tayhu-logo-white-2.png" alt="logo-img" style="width:200px; height:70px;">
                             </a>
                         </div>
                     </div>
@@ -170,7 +174,7 @@
                                 <li class="has-dropdown active menu-thumb">
                                     <a href="{{ route('home')}}"> {{__('main.home')}} </a>
                                 </li>
-                                
+
                                 <li>
                                     <a href="{{ route('about')}}">{{ __('main.about')}}</a>
                                 </li>
@@ -195,25 +199,37 @@
                                         <li><a href="404.html">404 Page</a></li>
                                     </ul>
                                 </li> -->
-                             <li>
-                                <a href="{{ route('services')}}">
-                                    {{ __('main.products')}}
-                                    <i class="fa-solid fa-plus"></i>
-                                </a>
-                                        <ul class="submenu">
-                                            <li><a href="{{ route('service-details')}}">MDF Panels</a></li>
-                                            <li><a href="{{ route('service-details')}}">Ceiling Panels</a></li>
-                                            <li><a href="{{ route('service-details')}}">Wall Panels</a></li>
-                                            <li><a href="{{ route('service-details')}}">Window Frame</a></li>
-                                            
-                                        </ul>
-                                    </li>
+                                <li>
+                                    <a href="{{ route('products')}}">
+                                        {{__('main.products')}}
+                                        <i class="fa-solid fa-plus"></i>
+                                    </a>
+                                    <?php
+                                    $lang = app()->getLocale();
+                                    $categories = \App\Models\Category::all();
+                                    ?>
+                                    <ul class="submenu">
+                                        @foreach($categories as $category)
+                                            @foreach($category->products as $product)
+                                                <li>
+                                                    <a href="{{ route('product-details', $product->id)}}">
+                                                        {{ $category['name_' . $lang] }}
+                                                    </a>
+                                                </li>
+                                            @endforeach
+                                        @endforeach
+                                        {{--                                                <li><a href="{{ route('service-details')}}">Ceiling Panels</a></li>--}}
+                                        {{--                                                <li><a href="{{ route('service-details')}}">Wall Panels</a></li>--}}
+                                        {{--                                                <li><a href="{{ route('service-details')}}">Window Frame</a></li>--}}
+
+                                    </ul>
+                                </li>
                                 <li>
                                     <a href="{{ route('gallery')}}">
                                         {{__('main.gallery')}}
                                     </a>
                                 </li>
-                             
+
                                 <li>
                                     <a href="{{ route('showroom')}}">
                                         {{__('main.showroom')}}
@@ -226,9 +242,9 @@
                         </nav>
                             </div>
                         </div>
-                        
+
                         <div class="search-item">
-                            <a href="#0" class="search-trigger search-icon"><i class="fas fa-search"></i></a>
+                            <a href="javascript:void(0);" class="search-trigger search-icon"><i class="fas fa-search"></i></a>
                             <div class="header__hamburger d-xl-block my-auto">
                                 <div class="sidebar__toggle">
                                     <i class="fas fa-bars"></i>
@@ -240,7 +256,7 @@
             </div>
         </div>
     </div>
-</header>  
+</header>
 
 <!-- Search Area Start -->
 <div class="search-wrap">

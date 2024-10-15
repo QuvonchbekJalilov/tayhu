@@ -22,16 +22,25 @@ class TeamController extends Controller
     {
         $request->validate([
             'name' => 'required|string|max:255',
+            'position_uz' => 'nullable|string|max:255',
+            'position_ru' => 'nullable|string|max:255',
+            'position_en' => 'nullable|string|max:255',
             'description_uz' => 'nullable|string',
             'description_ru' => 'nullable|string',
             'description_en' => 'nullable|string',
             'skill_text_uz' => 'nullable|string',
             'skill_text_ru' => 'nullable|string',
             'skill_text_en' => 'nullable|string',
-            'architecture' => 'boolean',
-            'construction' => 'boolean',
-            'interior_design' => 'boolean',
+            'architecture' => 'nullable|string',
+            'construction' => 'nullable|string',
+            'interior_design' => 'nullable|string',
+            'instagram' => 'nullable|string',
+            'telegram' => 'nullable|string',
+            'facebook' => 'nullable|string',
+            'availability' => 'nullable|string',
+            'experience' => 'nullable|string',
         ]);
+
 
         Team::create($request->all());
 
@@ -47,15 +56,22 @@ class TeamController extends Controller
     {
         $request->validate([
             'name' => 'required|string|max:255',
+            'position_uz' => 'nullable|string|max:255',
+            'position_ru' => 'nullable|string|max:255',
+            'position_en' => 'nullable|string|max:255',
             'description_uz' => 'nullable|string',
             'description_ru' => 'nullable|string',
             'description_en' => 'nullable|string',
             'skill_text_uz' => 'nullable|string',
             'skill_text_ru' => 'nullable|string',
             'skill_text_en' => 'nullable|string',
-            'architecture' => 'boolean',
-            'construction' => 'boolean',
-            'interior_design' => 'boolean',
+            'architecture' => 'nullable|string',
+            'construction' => 'nullable|string',
+            'interior_design' => 'nullable|string',
+            'instagram' => 'nullable|string',
+            'telegram' => 'nullable|string',
+            'availability' => 'nullable|string',
+            'experience' => 'nullable|string',
         ]);
 
         $team->update($request->all());

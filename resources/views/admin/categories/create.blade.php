@@ -38,35 +38,20 @@
                                     <h5 class="card-title">Category Details</h5>
                                 </div>
                                 <div class="card-body custom-card-action p-0">
-                                    <ul class="nav-tab-items-wrapper nav nav-justified invoice-overview-tab-item">
-                                        <li class="nav-item">
-                                            <a href="javascript:void(0);" class="nav-link active" data-bs-toggle="tab" data-bs-target="#uzConTab">O'zbekcha</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="javascript:void(0);" class="nav-link" data-bs-toggle="tab" data-bs-target="#enConTab">English</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="javascript:void(0);" class="nav-link" data-bs-toggle="tab" data-bs-target="#ruConTab">Русский</a>
-                                        </li>
-                                    </ul>
 
                                     <div class="tab-content p-4">
-                                        <div class="tab-pane fade show active" id="uzConTab" role="tabpanel">
-                                            <div class="form-group pb-3">
+                                        <div class="row">
+                                            <div class="form-group pb-3 col-lg-4">
                                                 <label for="name_uz">Category Name (UZ):</label>
-                                                <input type="text" class="form-control w-50" id="name_uz" name="name_uz" value="{{ old('name_uz') }}" required>
+                                                <input type="text" class="form-control" id="name_uz" name="name_uz" value="{{ old('name_uz') }}" required>
                                             </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="enConTab" role="tabpanel">
-                                            <div class="form-group pb-3">
+                                            <div class="form-group pb-3 col-lg-4">
                                                 <label for="name_en">Category Name (EN):</label>
-                                                <input type="text" class="form-control w-50" id="name_en" name="name_en" value="{{ old('name_en') }}" required>
+                                                <input type="text" class="form-control" id="name_en" name="name_en" value="{{ old('name_en') }}" required>
                                             </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="ruConTab" role="tabpanel">
-                                            <div class="form-group pb-3">
+                                            <div class="form-group pb-3 col-lg-4">
                                                 <label for="name_ru">Category Name (RU):</label>
-                                                <input type="text" class="form-control w-50" id="name_ru" name="name_ru" value="{{ old('name_ru') }}" required>
+                                                <input type="text" class="form-control" id="name_ru" name="name_ru" value="{{ old('name_ru') }}" required>
                                             </div>
                                         </div>
                                     </div>

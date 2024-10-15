@@ -12,13 +12,13 @@ class PortfolioController extends Controller
     public function index()
     {
         $portfolios = Portfolio::all();
-        return view('portfolios.index', compact('portfolios'));
+        return view('admin.portfolios.index', compact('portfolios'));
     }
 
     public function create()
     {
         $teams = Team::all(); // Fetch all teams for the dropdown
-        return view('portfolios.create', compact('teams'));
+        return view('admin.portfolios.create', compact('teams'));
     }
 
     public function store(Request $request)
@@ -51,7 +51,7 @@ class PortfolioController extends Controller
     public function edit(Portfolio $portfolio)
     {
         $teams = Team::all(); // Fetch all teams for the dropdown
-        return view('portfolios.edit', compact('portfolio', 'teams'));
+        return view('admin.portfolios.edit', compact('portfolio', 'teams'));
     }
 
     public function update(Request $request, Portfolio $portfolio)

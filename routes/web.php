@@ -4,9 +4,9 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\frontend\PageController;
 use App\Http\Controllers\LanguageController;
+use App\Http\Controllers\LicenceController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\ProductController;
-use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\SliderController;
 use App\Http\Controllers\TeamController;
 use Illuminate\Support\Facades\Route;
@@ -32,12 +32,12 @@ Route::get('/check-email', [AuthController::class, 'checkEmail'])->name('checkEm
 Route::get('/', [PageController::class, 'index'])->name('home');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 Route::get('/about', [PageController::class, 'about'])->name('about');
-Route::get('/products', [PageController::class, 'services'])->name('services');
-Route::get('/product-details', [PageController::class,'serviceDetails'])->name('service-details');
+Route::get('/products', [PageController::class, 'products'])->name('products');
+Route::get('/product-details/{id}', [PageController::class,'productsDetails'])->name('product-details');
 Route::get('/gallery', [PageController::class, 'gallery'])->name('gallery');
 Route::get('/showroom', [PageController::class,'showroom'])->name('showroom');
 Route::get('faq', [PageController::class, 'faq'])->name('faq');
-Route::get('team-detail', [PageController::class, 'team'])->name('team-detail');
+Route::get('team-detail/{id}', [PageController::class, 'team'])->name('team-detail');
 Route::get('/search', [PageController::class, 'search'])->name('search');
 
 Route::post('/switch-language', [LanguageController::class, 'switchLanguage'])->name('switch.language');
@@ -53,5 +53,5 @@ Route::middleware(['auth'])->prefix('admin')->group(function () {
     Route::resource('/categories', CategoryController::class);
     Route::resource('/portfolios', PortfolioController::class);
     Route::resource('/teams', TeamController::class);
-    Route::resource('/licences', TeamController::class);
+    Route::resource('/licences', LicenceController::class);
 });

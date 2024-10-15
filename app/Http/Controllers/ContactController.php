@@ -21,6 +21,7 @@ class ContactController extends Controller
     public function update(Request $request, Contact $contact)
     {
         $request->validate([
+            'email' => 'nullable|string|max:255',
             'address' => 'nullable|string|max:255',
             'phone_number' => 'nullable|string|max:20',
             'telegram' => 'nullable|string|max:255',

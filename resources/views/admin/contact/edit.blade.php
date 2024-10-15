@@ -42,6 +42,10 @@
                                         <input type="text" class="form-control" id="address" name="address" value="{{ old('address', $contact->address) }}" required>
                                     </div>
                                     <div class="form-group">
+                                        <label for="email">Email:</label>
+                                        <input type="email" class="form-control" id="email" name="email" value="{{ old('email', $contact->email) }}" required>
+                                    </div>
+                                    <div class="form-group">
                                         <label for="phone_number">Phone Number:</label>
                                         <input type="text" class="form-control" id="phone_number" name="phone_number" value="{{ old('phone_number', $contact->phone_number) }}" required>
                                     </div>

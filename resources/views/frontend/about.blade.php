@@ -1,3 +1,9 @@
+<?php
+
+$lang = app()->getLocale();
+
+?>
+
 <x-layouts.frontend>
     <x-slot:title>
         Biz haqimizda
@@ -51,11 +57,11 @@
             <div class="row g-4">
                 <div class="col-lg-6">
                     <div class="about-image">
-                        <img src="assets/img/new-images/tayhu-company-images/bg-19 1.png" alt="img"
+                        <img src="/assets/img/new-images/tayhu-company-images/bg-19 1.png" alt="img"
                             class="wow fadeInLeft" data-wow-delay=".2s"
                             style="height: 600px; object-fit: cover;">
                         <div class="about-image-2 wow fadeInUp" data-wow-delay=".4s">
-                            <img src="assets/img/new-images/tayhu-company-images/bg-16 1.png" alt="img"
+                            <img src="/assets/img/new-images/tayhu-company-images/bg-16 1.png" alt="img"
                                 style="height: 300px;object-fit: cover;">
                             <div class="video-box">
                                 <a href="https://www.youtube.com/watch?v=M-cmAwB-L2s"
@@ -65,7 +71,7 @@
                             </div>
                         </div>
                         <div class="about-line-shape">
-                            <img src="assets/img/about/about-shape-3.png" alt="img">
+                            <img src="/assets/img/about/about-shape-3.png" alt="img">
                         </div>
                     </div>
                 </div>
@@ -87,17 +93,17 @@
                         </ul>
                         <div class="about-author">
                             <div class="author-image wow fadeInUp" data-wow-delay=".2s">
-                                <img src="assets/img/about/author.png" alt="{{ __('main.author_name') }}">
+                                <img src="//img/about/author.png" alt="{{ __('main.author_name') }}">
                                 <div class="content">
                                     <p>{{ __('main.author_name') }}, CEO</p>
                                     <h4>{{ __('main.author_name') }}</h4>
                                 </div>
                             </div>
-                            <img src="assets/img/about/signature.png" alt="Signature" class="wow fadeInUp" data-wow-delay=".4s">
+                            <img src="/assets/img/about/signature.png" alt="Signature" class="wow fadeInUp" data-wow-delay=".4s">
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -108,7 +114,7 @@
     <div class="container">
         <div class="achivements-wrapper-2 section-padding">
             <div class="bg-shape">
-                <img src="assets/img/new-images/figure-brown-1.png" alt="img">
+                <img src="/assets/img/new-images/figure-brown-1.png" alt="img">
             </div>
             <div class="row g-4">
                 <div class="col-lg-6">
@@ -129,12 +135,12 @@
                 <div class="col-lg-6">
                     <div class="achivements-right-items">
                         <div class="border-shape">
-                            <img src="assets/img/border.png" alt="img">
+                            <img src="/assets/img/border.png" alt="img">
                         </div>
                         <div class="achivements-item">
                             <div class="counter-items wow fadeInUp" data-wow-delay=".2s">
                                 <div class="icon">
-                                    <img src="assets/img/icon/21.svg" alt="img">
+                                    <img src="/assets/img/icon/21.svg" alt="img">
                                 </div>
                                 <div class="content">
                                     <h2><span class="count">45</span>k+</h2>
@@ -143,7 +149,7 @@
                             </div>
                             <div class="counter-items wow fadeInUp" data-wow-delay=".4s">
                                 <div class="icon">
-                                    <img src="assets/img/icon/22.svg" alt="img">
+                                    <img src="/assets/img/icon/22.svg" alt="img">
                                 </div>
                                 <div class="content">
                                     <h2><span class="count">25</span>k+</h2>
@@ -154,7 +160,7 @@
                         <div class="achivements-item">
                             <div class="counter-items style-2 wow fadeInUp" data-wow-delay=".2s">
                                 <div class="icon">
-                                    <img src="assets/img/icon/23.svg" alt="img">
+                                    <img src="/assets/img/icon/23.svg" alt="img">
                                 </div>
                                 <div class="content">
                                     <h2><span class="count">2.5</span>+</h2>
@@ -163,7 +169,7 @@
                             </div>
                             <div class="counter-items style-2 wow fadeInUp" data-wow-delay=".4s">
                                 <div class="icon">
-                                    <img src="assets/img/icon/24.svg" alt="img">
+                                    <img src="/assets/img/icon/24.svg" alt="img">
                                 </div>
                                 <div class="content">
                                     <h2><span class="count">2.4</span>k+</h2>
@@ -177,7 +183,7 @@
         </div>
     </div>
     <div class="man-image float-bob-x ">
-        <img src="assets/img/man.png" alt="img">
+        <img src="/assets/img/man.png" alt="img">
     </div>
 </section>
 
@@ -188,51 +194,68 @@
         <h2 class="splt-txt wow" data-splitting>{{__('main.our_certificate_title')}}</h2>
     </div>
         <div class="row g-4">
-            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                <div class="project-card-items">
-                    <div class="project-image">
-                        <img src="assets/img/new-images/tayhu-company-images/for-blog/certificate-1.png" alt="img">
-                        <img src="assets/img/new-images/tayhu-company-images/for-blog/certificate-1.png" alt="img">
-                    </div>
-                    <div class="project-content">
-                        <h3><a href="project-details.html">Certificate of Appreciation</a></h3>
-                    </div>
-                    <div class="shape-img">
-                        <img src="assets/img/new-images/figure-brown-3.png" alt="img">
+{{--            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">--}}
+{{--                <div class="project-card-items">--}}
+{{--                    <div class="project-image">--}}
+{{--                        <img src="/assets/img/new-images/tayhu-company-images/for-blog/certificate-1.png" alt="img">--}}
+{{--                        <img src="/assets/img/new-images/tayhu-company-images/for-blog/certificate-1.png" alt="img">--}}
+{{--                    </div>--}}
+{{--                    <div class="project-content">--}}
+{{--                        <h3><a href="project-details.html">Certificate of Appreciation</a></h3>--}}
+{{--                    </div>--}}
+{{--                    <div class="shape-img">--}}
+{{--                        <img src="/assets/img/new-images/figure-brown-3.png" alt="img">--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">--}}
+{{--                <div class="project-card-items">--}}
+{{--                    <div class="project-image">--}}
+{{--                        <img src="/assets/img/new-images/tayhu-company-images/for-blog/certificate-2.png" alt="img">--}}
+{{--                        <img src="/assets/img/new-images/tayhu-company-images/for-blog/certificate-2.png" alt="img">--}}
+{{--                    </div>--}}
+{{--                    <div class="project-content">--}}
+{{--                        <h3><a href="/project-details.html">Certificate of Completion</a></h3>--}}
+
+{{--                    </div>--}}
+{{--                    <div class="shape-img">--}}
+{{--                        <img src="/assets/img/new-images/figure-brown-3.png" alt="img">--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".6s">--}}
+{{--                <div class="project-card-items">--}}
+{{--                    <div class="project-image">--}}
+{{--                        <img src="/assets/img/new-images/tayhu-company-images/for-blog/certificate-3.png" alt="img">--}}
+{{--                        <img src="/assets/img/new-images/tayhu-company-images/for-blog/certificate-3.png" alt="img">--}}
+{{--                    </div>--}}
+{{--                    <div class="project-content">--}}
+{{--                        <h3><a href="javascript:void(0);">Certificate of Appreciation</a></h3>--}}
+
+{{--                    </div>--}}
+{{--                    <div class="shape-img">--}}
+{{--                        <img src="/assets/img/new-images/figure-brown-3.png" alt="img">--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+            @foreach($licences as $licence)
+                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                    <div class="project-card-items">
+                        <div class="project-image">
+                            <img src="{{ asset('storage/' . $licence->image) }}" alt="img">
+                            <img src="{{ asset('storage/' . $licence->image) }}" alt="img">
+                        </div>
+                        <div class="project-content">
+                            <h3><a href="javascript:void(0);">{{ $licence['name_' . $lang ] }}</a></h3>
+
+                        </div>
+                        <div class="shape-img">
+                            <img src="/assets/img/new-images/figure-brown-3.png" alt="img">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                <div class="project-card-items">
-                    <div class="project-image">
-                        <img src="assets/img/new-images/tayhu-company-images/for-blog/certificate-2.png" alt="img">
-                        <img src="assets/img/new-images/tayhu-company-images/for-blog/certificate-2.png" alt="img">
-                    </div>
-                    <div class="project-content">
-                        <h3><a href="project-details.html">Certificate of Completion</a></h3>
-                     
-                    </div>
-                    <div class="shape-img">
-                        <img src="assets/img/new-images/figure-brown-3.png" alt="img">
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                <div class="project-card-items">
-                    <div class="project-image">
-                        <img src="assets/img/new-images/tayhu-company-images/for-blog/certificate-3.png" alt="img">
-                        <img src="assets/img/new-images/tayhu-company-images/for-blog/certificate-3.png" alt="img">
-                    </div>
-                    <div class="project-content">
-                        <h3><a href="project-details.html">Certificate of Appreciation</a></h3>
-                       
-                    </div>
-                    <div class="shape-img">
-                        <img src="assets/img/new-images/figure-brown-3.png" alt="img">
-                    </div>
-                </div>
-            </div>
-       
+            @endforeach
+
         </div>
     </div>
 </section>
@@ -248,78 +271,101 @@
             <h2 class="splt-txt wow" data-splitting>{{__('main.our_team_title')}}</h2>
         </div>
         <div class="row">
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 wow fadeInUp">
-                <div class="team-box-items">
-                    <div class="social-icon d-grid align-items-center">
-                        <a href="#"><i class="fab fa-telegram"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    </div>
-                    <div class="team-image">
-                        <img src="assets/img/new-images/user-img.jpg" alt="img">
-                    </div>
-                    <div class="team-content">
-                        <h5><a href="{{ route('team-detail')}}">Shikhon Islam</a></h5>
-                        <p>Sr. engineer</p>
-                        <a href="{{ route('team-detail')}}" class="icon"><i class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".2s">
-                <div class="team-box-items active">
-                    <div class="social-icon d-grid align-items-center">
-                        <a href="#"><i class="fab fa-telegram"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    </div>
-                    <div class="team-image">
-                        <img src="assets/img/new-images/user-img.jpg" alt="img">
-                    </div>
-                    <div class="team-content">
-                        <h5><a href="{{ route('team-detail')}}">Jenny Wilson</a></h5>
-                        <p>Sr. engineer</p>
-                        <a href="{{ route('team-detail')}}" class="icon"><i class="fa-solid fa-link"></i></a>
+            @foreach($teams as $team)
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 wow fadeInUp">
+                    <div class="team-box-items">
+                        <div class="social-icon d-grid align-items-center">
+                            <a href="{{ $team->telegram }}"><i class="fab fa-telegram"></i></a>
+                            <a href="{{ $team->instagram }}"><i class="fab fa-instagram"></i></a>
+                            <a href="{{ $team->facebook }}"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                        <div class="team-image">
+                            @if ($team->image)
+                                <img src="{{ asset('storage/' . $team->image) }}" alt="img">
+                            @else
+                                <img src="/assets/img/new-images/user-img.jpg" alt="img">
+                            @endif
+                        </div>
+                        <div class="team-content">
+                            <h5><a href="{{ route('team-detail', $team->id)}}">{{ $team->name }}</a></h5>
+                            <p>{{ $team['position_' . $lang] }}</p>
+                            <a href="{{ route('team-detail', $team->id)}}" class="icon"><i class="fa-solid fa-link"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".4s">
-                <div class="team-box-items">
-                    <div class="social-icon d-grid align-items-center">
-                        <a href="#"><i class="fab fa-telegram"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    </div>
-                    <div class="team-image">
-                        <img src="assets/img/new-images/user-img.jpg" alt="img">
-                    </div>
-                    <div class="team-content">
-                        <h5><a href="{{ route('team-detail')}}">Kawser Ahmed</a></h5>
-                        <p>Sr. engineer</p>
-                        <a href="{{ route('team-detail')}}" class="icon"><i class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".6s">
-                <div class="team-box-items">
-                    <div class="social-icon d-grid align-items-center">
-                        <a href="#"><i class="fab fa-telegram"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    </div>
-                    <div class="team-image">
-                        <img src="assets/img/new-images/user-img.jpg" alt="img">
-                    </div>
-                    <div class="team-content">
-                        <h5><a href="{{ route('team-detail')}}">Ronald Richards</a></h5>
-                        <p>Sr. engineer</p>
-                        <a href="{{ route('team-detail')}}" class="icon"><i class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-            </div>
+            @endforeach
+{{--            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 wow fadeInUp">--}}
+{{--                <div class="team-box-items">--}}
+{{--                    <div class="social-icon d-grid align-items-center">--}}
+{{--                        <a href="#"><i class="fab fa-telegram"></i></a>--}}
+{{--                        <a href="#"><i class="fab fa-instagram"></i></a>--}}
+{{--                        <a href="#"><i class="fab fa-instagram"></i></a>--}}
+{{--                        <a href="#"><i class="fab fa-facebook-f"></i></a>--}}
+{{--                    </div>--}}
+{{--                    <div class="team-image">--}}
+{{--                        <img src="/assets/img/new-images/user-img.jpg" alt="img">--}}
+{{--                    </div>--}}
+{{--                    <div class="team-content">--}}
+{{--                        <h5><a href="{{ route('team-detail')}}">Shikhon Islam</a></h5>--}}
+{{--                        <p>Sr. engineer</p>--}}
+{{--                        <a href="{{ route('team-detail')}}" class="icon"><i class="fa-solid fa-link"></i></a>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".2s">--}}
+{{--                <div class="team-box-items active">--}}
+{{--                    <div class="social-icon d-grid align-items-center">--}}
+{{--                        <a href="#"><i class="fab fa-telegram"></i></a>--}}
+{{--                        <a href="#"><i class="fab fa-instagram"></i></a>--}}
+{{--                        <a href="#"><i class="fab fa-instagram"></i></a>--}}
+{{--                        <a href="#"><i class="fab fa-facebook-f"></i></a>--}}
+{{--                    </div>--}}
+{{--                    <div class="team-image">--}}
+{{--                        <img src="/assets/img/new-images/user-img.jpg" alt="img">--}}
+{{--                    </div>--}}
+{{--                    <div class="team-content">--}}
+{{--                        <h5><a href="{{ route('team-detail')}}">Jenny Wilson</a></h5>--}}
+{{--                        <p>Sr. engineer</p>--}}
+{{--                        <a href="{{ route('team-detail')}}" class="icon"><i class="fa-solid fa-link"></i></a>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".4s">--}}
+{{--                <div class="team-box-items">--}}
+{{--                    <div class="social-icon d-grid align-items-center">--}}
+{{--                        <a href="#"><i class="fab fa-telegram"></i></a>--}}
+{{--                        <a href="#"><i class="fab fa-instagram"></i></a>--}}
+{{--                        <a href="#"><i class="fab fa-instagram"></i></a>--}}
+{{--                        <a href="#"><i class="fab fa-facebook-f"></i></a>--}}
+{{--                    </div>--}}
+{{--                    <div class="team-image">--}}
+{{--                        <img src="/assets/img/new-images/user-img.jpg" alt="img">--}}
+{{--                    </div>--}}
+{{--                    <div class="team-content">--}}
+{{--                        <h5><a href="{{ route('team-detail')}}">Kawser Ahmed</a></h5>--}}
+{{--                        <p>Sr. engineer</p>--}}
+{{--                        <a href="{{ route('team-detail')}}" class="icon"><i class="fa-solid fa-link"></i></a>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".6s">--}}
+{{--                <div class="team-box-items">--}}
+{{--                    <div class="social-icon d-grid align-items-center">--}}
+{{--                        <a href="#"><i class="fab fa-telegram"></i></a>--}}
+{{--                        <a href="#"><i class="fab fa-instagram"></i></a>--}}
+{{--                        <a href="#"><i class="fab fa-instagram"></i></a>--}}
+{{--                        <a href="#"><i class="fab fa-facebook-f"></i></a>--}}
+{{--                    </div>--}}
+{{--                    <div class="team-image">--}}
+{{--                        <img src="/assets/img/new-images/user-img.jpg" alt="img">--}}
+{{--                    </div>--}}
+{{--                    <div class="team-content">--}}
+{{--                        <h5><a href="{{ route('team-detail')}}">Ronald Richards</a></h5>--}}
+{{--                        <p>Sr. engineer</p>--}}
+{{--                        <a href="{{ route('team-detail')}}" class="icon"><i class="fa-solid fa-link"></i></a>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
         </div>
     </div>
 </section>

@@ -1,9 +1,8 @@
 @extends('layouts.layout')
 
 @section('content')
-    <form action="{{ route('categories.update', $category->id) }}" method="POST" enctype="multipart/form-data" class="needs-validation" novalidate onsubmit="updateEditorContent()">
+    <form action="{{ route('licences.store') }}" method="POST" enctype="multipart/form-data" class="needs-validation" novalidate onsubmit="updateEditorContent()">
         @csrf
-        @method('PUT')
 
         <main class="nxl-container">
             <div class="nxl-content">
@@ -11,12 +10,11 @@
                 <div class="page-header">
                     <div class="page-header-left d-flex align-items-center">
                         <div class="page-header-title">
-                            <h5 class="m-b-10">Edit Product</h5>
+                            <h5 class="m-b-10">Create Licence</h5>
                         </div>
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Home</a></li>
-                            <li class="breadcrumb-item">Product</li>
-                            <li class="breadcrumb-item active">Edit</li>
+                            <li class="breadcrumb-item">Licences</li>
                         </ul>
                     </div>
                     <div class="page-header-right ms-auto">
@@ -25,7 +23,7 @@
                                 <i class="fas fa-arrow-left me-2"></i>
                                 <span>Back</span>
                             </a>
-                            <button type="submit" class="btn btn-primary">Update</button>
+                            <button type="submit" class="btn btn-primary">Create</button>
                         </div>
                     </div>
                 </div>
@@ -34,32 +32,46 @@
                 <!-- [ Main Content ] start -->
                 <div class="main-content">
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-lg-8">
                             <div class="card stretch stretch-full">
                                 <div class="card-header">
-                                    <h5 class="card-title">Product Details</h5>
+                                    <h5 class="card-title">Licence Details</h5>
                                 </div>
                                 <div class="card-body custom-card-action p-0">
-
                                     <div class="tab-content p-4">
                                         <div class="row">
                                             <div class="form-group pb-3 col-lg-4">
-                                                <label for="name_uz">Product Name (UZ):</label>
-                                                <input type="text" class="form-control" id="name_uz" name="name_uz" value="{{ old('name_uz', $category->name_uz) }}" required>
+                                                <label for="name_uz">Licence Name (UZ):</label>
+                                                <input type="text" class="form-control" id="name_uz" name="name_uz" value="{{ old('name_uz') }}" required>
                                             </div>
                                             <div class="form-group pb-3 col-lg-4">
-                                                <label for="name_en">Product Name (EN):</label>
-                                                <input type="text" class="form-control" id="name_en" name="name_en" value="{{ old('name_en', $category->name_en) }}" required>
+                                                <label for="name_en">Licence Name (EN):</label>
+                                                <input type="text" class="form-control" id="name_en" name="name_en" value="{{ old('name_en') }}" required>
                                             </div>
                                             <div class="form-group pb-3 col-lg-4">
-                                                <label for="name_ru">Product Name (RU):</label>
-                                                <input type="text" class="form-control" id="name_ru" name="name_ru" value="{{ old('name_ru', $category->name_ru) }}" required>
+                                                <label for="name_ru">Licence Name (RU):</label>
+                                                <input type="text" class="form-control" id="name_ru" name="name_ru" value="{{ old('name_ru') }}" required>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- [ Overview Section ] start -->
+                        <div class="col-xxl-4 col-lg-4">
+                            <div class="card stretch stretch-full">
+
+                                <div class="card-header">
+                                    <h5 class="card-title">Image Settings</h5>
+                                </div>
+                                <div class="card-body custom-card-action p-0">
+                                    <div class="tab-content p-4">
+                                        <input type="file" name="image" id="image" class="form-control" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- [ Overview Section ] end -->
                     </div>
                 </div>
             </div>

@@ -9,7 +9,7 @@ class Portfolio extends Model
 {
     use HasFactory;
 
-    protected $table = 'portfolio';
+    protected $table = 'portfolios';
 
     protected $fillable = [
         'team_id',
@@ -18,4 +18,9 @@ class Portfolio extends Model
         'title_en',
         'image',
     ];
+
+    public function team()
+    {
+        return $this->belongsTo(Team::class);
+    }
 }
