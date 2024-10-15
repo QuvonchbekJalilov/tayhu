@@ -149,10 +149,10 @@ $contact = \App\Models\Contact::first();
             <div class="top-right">
 
                 <div class="social-icon d-flex align-items-center">
-                    <a href="{{ $contact->address ?? "facebook"}}"><i class="fab fa-facebook-f"></i></a>
-                    <a href="j{{ $contact->address ?? "instagram"}}"><i class="fab fa-instagram"></i></a>
-                    <a href="{{ $contact->address ?? "youtube"}}javascript:void(0);"><i class="fab fa-youtube"></i></a>
-                    <a href="{{ $contact->address ?? "telegram"}}"><i class="fab fa-telegram"></i></a>
+                    <a href="{{ $contact->facebook ?? 'facebook'}}"><i class="fab fa-facebook-f"></i></a>
+                    <a href="j{{ $contact->instagram ?? 'instagram'}}"><i class="fab fa-instagram"></i></a>
+                    <a href="{{ $contact->youtube ?? 'youtube'}}"><i class="fab fa-youtube"></i></a>
+                    <a href="{{ $contact->telegram ?? 'telegram'}}"><i class="fab fa-telegram"></i></a>
                 </div>
             </div>
         </div>
